@@ -1,0 +1,41 @@
+{
+  "name": "switchgear",
+  "version": "1.0.0",
+  "description": "SwitchGear offers a premium selection of mechanical keyboards and accessories, perfect for gamers and typing enthusiasts. Discover top-quality, customizable keyboards designed to elevate your experience, with fast shipping and 24/7 support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devhasanmia/SwitchGear.git"
+  },
+  "keywords": [
+    "SwitchGear",
+    "Hasan",
+    "Solution",
+    "Point",
+    "Hasanmiaweb"
+  ],
+  "author": "MD. HASAN MIA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devhasanmia/SwitchGear/issues"
+  },
+  "homepage": "https://github.com/devhasanmia/SwitchGear#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "http-status": "^1.7.4",
+    "mongoose": "^8.6.2",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}

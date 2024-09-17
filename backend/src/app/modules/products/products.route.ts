@@ -5,9 +5,12 @@ import { ProductControllers } from "./products.controller";
 const router = express.Router();
 
 router.post(
-  "/products",
+  "/",
   validateRequest(ProductValidationSchema),
-  ProductControllers.createProduct
+  ProductControllers.CreateProduct
 );
+
+router.get("/", ProductControllers.GetAllProducts);
+router.get("/:id", ProductControllers.GetProductById)
 
 export const ProductsRouter = router;

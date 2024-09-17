@@ -19,14 +19,14 @@ const ProductValidationSchema = z.object({
         required_error: "Price is required",
         invalid_type_error: "Price must be a number",
       })
-      .nonnegative("Price must be a non-negative number"),
+      .nonnegative("Price must be a positive number"),
     quantity: z
       .number({
         required_error: "Quantity is required",
         invalid_type_error: "Quantity must be a number",
       })
       .int("Quantity must be an integer")
-      .nonnegative("Quantity must be a non-negative number"),
+      .nonnegative("Quantity must be a positive number"),
     rating: z
       .number()
       .min(0, "Rating must be at least 0")

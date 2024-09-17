@@ -10,7 +10,7 @@ const moduleRoutes = [
     route: ContactRouter,
   },
   {
-    path: "/",
+    path: "/products",
     route: ProductsRouter,
   },
 ];

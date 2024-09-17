@@ -11,8 +11,8 @@ const createContact: RequestHandler = async (req, res, next) => {
       message: "Your message has been successfully sent.",
       data: contact,
     });
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    next(err);
   }
 };
 
